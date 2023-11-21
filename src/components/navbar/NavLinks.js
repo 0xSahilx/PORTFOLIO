@@ -8,23 +8,39 @@ const NavLinks = ({ handleNav }) => {
   return (
     <ul className="nav-links">
       <li onClick={handleNav}>
-        <Link to="/" target="_blank" className="nav-link">
+        <Link
+          to="https://twitter.com/pareShan_zal?t=rc1urpCZ45cWZl8_J5HsLg&s=08"
+          target="_blank"
+          className="nav-link"
+        >
           <FaTwitter />
         </Link>
       </li>
       <li onClick={handleNav}>
-        <Link to="/" target="_blank" className="nav-link">
+        <Link
+          to="https://www.linkedin.com/in/shanzal-siddiqui-17a25b24a/"
+          target="_blank"
+          className="nav-link"
+        >
           <FaLinkedin />
         </Link>
       </li>
       <li onClick={handleNav}>
-        <Link to="/" target="_blank" className="nav-link">
+        <Link
+          to="https://github.com/0xSahilx"
+          target="_blank"
+          className="nav-link"
+        >
           <BsGithub />
         </Link>
       </li>
       {/* <li onClick={handleNav} ><Link  to="//www.instagram.com/pjp_concepts" target='_blank' className='nav-link'><FaInstagram /></Link></li> */}
       <li onClick={handleNav}>
-        <Link to="/" target="_blank" className="nav-link">
+        <Link
+          to="mailto:sahilaryan9211@gmail.com"
+          target="_blank"
+          className="nav-link"
+        >
           <BiEnvelope />
         </Link>
       </li>

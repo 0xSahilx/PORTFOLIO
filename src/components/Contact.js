@@ -56,7 +56,7 @@ const Contact = () => {
                 </Link>
                 <Link
                   className="hello-links"
-                  to="//mailto:sahilaryan9211@gmail.com"
+                  to="mailto:sahilaryan9211@gmail.com"
                   target="_blank"
                 >
                   sahilaryan9211@gmail.com
