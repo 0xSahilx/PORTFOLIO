@@ -109,7 +109,7 @@ const HeroSection = ({ nav, handleNav }) => {
       >
         <a
           href="Shanzal's Resume.pdf"
-          download="Peace Jinadu-Paul CV"
+          download="Shanzal Sidhiqui"
           className="hero-contact"
         >
           Download CV <BiDownload className="cv-icon" />
