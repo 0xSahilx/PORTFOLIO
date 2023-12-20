@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles/About.css";
 import { motion } from "framer-motion";
-import pc from "../images/pc.png";
+// import pc from "../images/pc.png";
+// import pr1 from "../images/pr1.jpg";
+import pr2 from "../images/pr2.jpg";
+// import pr3 from "../images/pr3.jpg";
+// import pr4 from "../images/pr4.jpg";
 
 const About = () => {
   const horizontal = {
@@ -20,7 +24,7 @@ const About = () => {
             viewport={{ once: true }}
             className="heading"
           >
-            <p className="heading-sub-text">Who I am</p>
+            <p className="heading-sub-text">Who am I !</p>
             <p className="heading-text">About Me</p>
           </motion.div>
           <div className="split-about">
@@ -30,11 +34,11 @@ const About = () => {
               className="about-content"
             >
               <p>
-                Hello! My name is Shanzal and I enjoy creating things that live
+                Hello! My name is Shahil and I enjoy creating things that live
                 on the internet. My interest in web development started back in
-                2018 when I decided to try out for my first school project —
-                turns out putting together a simple website taught me a lot
-                about HTML & CSS!{" "}
+                2022 when I decided to try out for my first personal ecommerce
+                project — turns out putting together a simple website taught me
+                a lot about HTML & CSS!{" "}
               </p>
               <br />
               <p>
@@ -52,7 +56,7 @@ const About = () => {
               whileInView={horizontal}
               className="about-img"
             >
-              <img src={pc} alt="Profile" />
+              <img src={pr2} alt="Profile" />
             </motion.div>
           </div>
         </div>

@@ -18,6 +18,7 @@ export const WorkData = [
     desc: "Our agency website to showcase our works",
     tech: [
       "React.js",
+      "NextJS",
       "Firebase",
       "TailwindCss",
       "APIs",
@@ -40,6 +41,21 @@ export const WorkData = [
     ],
     gitlink: "https://github.com/0xSahilx/DaanSahay_Frontend",
     site: "https://daan-sahay-frontend.vercel.app/",
+  },
+  {
+    title: "HackXLR8",
+    desc: "I built this website for my college hackathon.",
+    tech: [
+      "React.js",
+      "NextJS",
+      "Firebase",
+      "TailwindCss",
+      "APIs",
+      "Axios",
+      "Context API",
+    ],
+    gitlink: "https://github.com/0xSahilx/Agency",
+    site: "https://agency-sq2x.vercel.app/",
   },
   {
     title: "Agency",

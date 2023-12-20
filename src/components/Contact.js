@@ -52,7 +52,7 @@ const Contact = () => {
                   to="//wa.me/+917985179107"
                   target="_blank"
                 >
-                  wa.me/Shanzal
+                  wa.me/Shahil
                 </Link>
                 <Link
                   className="hello-links"

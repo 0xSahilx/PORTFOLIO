@@ -4,10 +4,11 @@ import { FaHome, FaLaptop } from "react-icons/fa";
 import { BiBookContent, BiServer, BiEnvelope } from "react-icons/bi";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-scroll";
-import pc from "../../images/pc.png";
+// import pc from "../../images/pc.png";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import pr5 from "../../images/pr5.jpg";
 
 const navVariants = {
   hidden: {
@@ -47,7 +48,7 @@ const Navbar = ({ nav, handleNav }) => {
         >
           <div className="top-details">
             <div className="img__cover">
-              <img src={pc} alt="Main" className="profile-pic-small" />
+              <img src={pr5} alt="Main" className="profile-pic-small" />
             </div>
             <Link
               activeClass="active"
@@ -59,7 +60,7 @@ const Navbar = ({ nav, handleNav }) => {
               to="home"
               className="profile-name"
             >
-              Shanzal Sidhiqui
+              Shahil Aryan Singh
             </Link>
             <NavLinks handleNav={handleNav} />
           </div>

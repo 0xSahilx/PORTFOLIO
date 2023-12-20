@@ -35,7 +35,7 @@ function App() {
           animate="visible"
           className="text"
         >
-          Shanzal Sidhiqui
+          Shahil Aryan Singh
         </motion.p>
       </div>
     </div>

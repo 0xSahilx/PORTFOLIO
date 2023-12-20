@@ -9,7 +9,7 @@ const NavLinks = ({ handleNav }) => {
     <ul className="nav-links">
       <li onClick={handleNav}>
         <Link
-          to="https://twitter.com/pareShan_zal?t=rc1urpCZ45cWZl8_J5HsLg&s=08"
+          to="https://x.com/0xsahils?t=1C8KOy6GfFMj713xKvImyg&s=09"
           target="_blank"
           className="nav-link"
         >
@@ -18,7 +18,7 @@ const NavLinks = ({ handleNav }) => {
       </li>
       <li onClick={handleNav}>
         <Link
-          to="https://www.linkedin.com/in/shanzal-siddiqui-17a25b24a/"
+          to="www.linkedin.com/in/sahil-aryan-singh"
           target="_blank"
           className="nav-link"
         >
