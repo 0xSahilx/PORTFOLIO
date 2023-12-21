@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Contact.css";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_i38s7qg";
+    const templateId = "template_7injuye";
+    const publicKey = "v7bwjRGgPQhA6cI_D";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Shahil",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("error sending email:", error);
+      });
+  };
+
   const fade = {
     opacity: 1,
     transition: {
@@ -63,6 +95,9 @@ const Contact = () => {
                 </Link>
               </div>
             </motion.div>
+
+            {/* form */}
+
             <motion.div
               className="right-box"
               initial={{ opacity: 0, y: "50px" }}
@@ -73,6 +108,7 @@ const Contact = () => {
                 method="POST"
                 data-netlify="true"
                 action="POST"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact-form" />
                 <div className="form-top">
@@ -82,6 +118,8 @@ const Contact = () => {
                       type="text"
                       name="name"
                       id="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       placeholder="Enter your name"
                       required
                     />
@@ -94,6 +132,8 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="Enter your email address"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -107,6 +147,8 @@ const Contact = () => {
                       name="message"
                       id="message"
                       placeholder="Hi, I think I need you to work on this particular product. Reach out as soon as you can"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       required
                     ></textarea>
                   </div>
