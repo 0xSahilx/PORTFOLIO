@@ -108,8 +108,8 @@ const HeroSection = ({ nav, handleNav }) => {
         whileInView="visible"
       >
         <a
-          href="Shanzal's Resume.pdf"
-          download="Shanzal Sidhiqui"
+          href="SahilResume.pdf"
+          download="Shahil Aryan Singh"
           className="hero-contact"
         >
           Download CV <BiDownload className="cv-icon" />
