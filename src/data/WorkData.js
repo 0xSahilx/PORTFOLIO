@@ -62,7 +62,7 @@ export const WorkData = [
       "Figma",
     ],
     gitlink: "https://github.com/0xSahilx/Agency",
-    site: "https://agency-sq2x.vercel.app/",
+    site: "https://hackathon-new.vercel.app/",
   },
   {
     title: "Invage",
