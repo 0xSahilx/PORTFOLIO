@@ -111,19 +111,4 @@ export const WorkData = [
     gitlink: "https://github.com/0xSahilx/Agency",
     site: "https://agency-sq2x.vercel.app/",
   },
-  {
-    title: "DaanSahay",
-    desc: "A platform to donate food to the needy.",
-    tech: [
-      "React.js",
-      "Firebase",
-      "Tailwind CSS",
-      "RESTful APIs",
-      "Redux",
-      "Material UI",
-      "Framer Motion",
-    ],
-    gitlink: "https://github.com/0xSahilx/DaanSahay_Frontend",
-    site: "https://daan-sahay-frontend.vercel.app/",
-  },
 ];
